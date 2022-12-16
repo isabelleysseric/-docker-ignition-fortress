@@ -77,7 +77,7 @@ sudo git clone https://github.com/isabelleysseric/Reinforcement-Learning-Researc
 
 <br/>
 
-*Step 1*: Extract it on `/home/user/` 
+*Step 2*: Extract it on `/home/user/` 
 
 ```shell
 unzip docker-ignition.zip
@@ -85,7 +85,7 @@ unzip docker-ignition.zip
 
 <br/>
 
-*Step 1*: Build all containers from the folder `docker-ignition`  
+*Step 3*: Build all containers from the folder `docker-ignition`  
 
 ```shell
 cd /home/user/docker-ignition/
@@ -94,9 +94,17 @@ make build
 
 <br/>
 
-*Step 1*: Build a specific container, for example here: `binary/focal/fortress`
+*Step 4*: Build a specific container, for example here: `binary/focal/fortress`
 
 ```shell
 cd /home/user/docker-ignition/
 make fortress-focal
+```
+
+<br/>
+
+*Step 5*: Run a specific container, for example here: `50dc95095bda`
+
+```shell
+docker run [docker_image]
 ```
